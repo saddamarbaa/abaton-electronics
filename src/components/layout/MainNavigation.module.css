@@ -1,0 +1,98 @@
+/** @format */
+
+.header {
+	width: 100%;
+	height: 5.625rem;
+	display: flex;
+	padding: 0 5%;
+	justify-content: space-between;
+	align-items: center;
+	background-color: #f8fbfe;
+	box-shadow: 10px 15px 15px #00000029;
+	width: 100%;
+	/* position: sticky; */
+	top: 0;
+	z-index: 100;
+	z-index: 100;
+}
+
+.logo img {
+	object-fit: contain;
+	width: 15.625rem;
+	height: 3.125rem;
+}
+
+.nav {
+	height: 100%;
+}
+
+.nav ul {
+	list-style: none;
+	display: flex;
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.nav li {
+	margin-left: 2.5rem;
+	font-size: 1.25rem;
+	display: flex;
+	align-items: center;
+	min-height: 100%;
+}
+
+.nav a {
+	min-width: 5.8755rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100%;
+	text-decoration: none;
+	color: #4b4b4d;
+	transition: 0.4s;
+	-webkit-transition: 0.4s;
+	-moz-transition: 0.4s;
+	-ms-transition: 0.4s;
+	-o-transition: 0.4s;
+}
+
+.nav .contact {
+	margin-left: 3rem;
+}
+
+.nav .contact a {
+	width: 193px;
+	min-height: auto;
+	box-shadow: inset 0px 3px 6px #00000029, 8px 8px 10px #00000029;
+	border: 1px solid #707070;
+	border-radius: 22px;
+	padding: 0.5rem 0;
+	-webkit-border-radius: 22px;
+	-moz-border-radius: 22px;
+	-ms-border-radius: 22px;
+	-o-border-radius: 22px;
+}
+
+.nav a:hover,
+.nav a:active,
+.nav a.active {
+	background: #e8e8e8;
+}
+
+@media (max-width: 768px) {
+	.nav .contact a {
+		display: none;
+	}
+
+	.logo img {
+		width: 6.25rem;
+		height: 3.125rem;
+	}
+
+	.nav li {
+		margin-left: 1rem;
+		font-size: 1.1rem;
+		min-height: 100%;
+	}
+}

@@ -1,0 +1,96 @@
+/** @format */
+
+.footer {
+	min-height: 25rem;
+	color: #4b4b4d;
+	background: #e8e8e8;
+	position: relative;
+}
+
+.footer .footer-head {
+	padding: 2rem 5%;
+	display: flex;
+	justify-content: space-between;
+	background: transparent;
+	background: url("../../img/Component.svg") no-repeat center center/cover;
+	box-shadow: inset 0px 3px 6px #8a555529;
+	border-bottom: 0.2px solid #d8d8d8;
+	flex-wrap: wrap;
+}
+
+.footer .logo {
+	margin-right: 2rem;
+}
+
+.footer .nav a {
+	display: flex;
+	padding: 1rem;
+	color: #4b4b4d;
+	font-weight: bold;
+}
+
+.footer .nav {
+	display: flex;
+	flex-direction: column;
+	width: 150px;
+}
+
+.footer .social-media p,
+.footer .contacts p span {
+	font-weight: bold;
+}
+
+.footer .social-media p,
+.footer .contacts p {
+	padding: 1rem;
+	color: #4b4b4d;
+}
+
+.footer .social-media .icon {
+	cursor: pointer;
+	margin-left: 0.5rem;
+	font-size: 2rem;
+}
+
+.footer .footer-bottom {
+	padding: 2rem 5%;
+	min-height: 2rem;
+	background: url("../../img/Component.svg") no-repeat center center/cover;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: bold;
+	font-size: 1.2rem;
+}
+
+@media (max-width: 568px) {
+	.footer .footer-bottom {
+		font-size: 1rem;
+	}
+
+	.footer .social-media .icon {
+		cursor: pointer;
+		margin-left: 1.2rem;
+		font-size: 2rem;
+	}
+}
+
+.scrollToTop {
+	position: absolute;
+	top: -1rem;
+	right: 0.1rem;
+	min-width: 2rem;
+	min-height: 2rem;
+	background: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	border-radius: 50%;
+}
+
+.scrollToTop .icon {
+	font-size: 2.3rem;
+	cursor: pointer;
+}
+
+/* https://first-client-webside.web.app */
