@@ -7,26 +7,12 @@ import { Route, Switch, Redirect } from "react-router-dom";
 import Layout from "./components/layout/Layout";
 import About from "./components/About";
 
-import Contact from "./pages/Contact";
+import Contact from "./components/Contact";
+import Work from "./components/Work";
+import Features from "./components/Features";
 
 function App() {
-	return (
-		<Layout>
-			<Switch>
-				<Route path='/' exact>
-					<About />
-				</Route>
-
-				<Route path='/contact'>
-					<Contact />
-				</Route>
-
-				<Route path='*'>
-					<h1>Page not found</h1>
-				</Route>
-			</Switch>
-		</Layout>
-	);
+	return <Layout></Layout>;
 }
 
 export default App;

@@ -18,6 +18,20 @@
 	flex-wrap: wrap;
 }
 
+@media (max-width: 568px) {
+	.footer .footer-head {
+		flex-direction: column;
+	}
+
+	.footer .logo {
+		margin-bottom: 2rem;
+	}
+
+	.hide-ms {
+		display: none;
+	}
+}
+
 .footer .logo {
 	margin-right: 2rem;
 }

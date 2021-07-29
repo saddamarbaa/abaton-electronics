@@ -1,6 +1,6 @@
 /** @format */
 
-import React from "react";
+import React, { memo } from "react";
 import classes from "./About.module.css";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
@@ -42,8 +42,9 @@ const About = () => {
 					</div>
 				</div>
 			</div>
+			<div className={classes["drop-back-shadow"]}></div>
 		</section>
 	);
 };
 
-export default About;
+export default memo(About);

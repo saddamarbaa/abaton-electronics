@@ -3,6 +3,7 @@
 .about {
 	background: #e8e8e8;
 	padding-bottom: 2.3rem;
+	position: relative;
 }
 
 .about .image {
@@ -17,7 +18,7 @@
 }
 
 .image img {
-	width: 100%;
+	width: 90%;
 	height: 100%;
 	object-fit: cover;
 }
@@ -27,7 +28,8 @@
 	position: absolute;
 	width: 100%;
 	top: 40%;
-	z-index: 2;
+	z-index: 3;
+	left: 0;
 	margin-bottom: 1.2rem;
 }
 
@@ -35,11 +37,13 @@
 	letter-spacing: 0px;
 	font-size: 4rem;
 	margin-bottom: 1rem;
+	padding-left: 2rem;
 }
 
 .absolute-content .svgImage {
 	max-width: 565px;
 	height: 36px;
+	padding-left: 2rem;
 }
 
 @media (max-width: 992px) {
@@ -60,6 +64,17 @@
 @media (max-width: 768px) {
 	.absolute-content .svgImage {
 		display: none;
+		padding-left: 0rem;
+	}
+
+	.absolute-content h1 {
+		padding-left: 0rem;
+	}
+}
+
+@media (max-width: 568px) {
+	.absolute-content h1 {
+		font-size: 2rem;
 	}
 }
 
@@ -136,4 +151,15 @@
 	.about .trusted-company-inner {
 		width: 31.25rem;
 	}
+}
+
+.drop-back-shadow {
+	position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	bottom: 0%;
+	width: 20%;
+	background: transparent linear-gradient(91deg, #e8e8e8 0%, #e8e8e800 100%) 0%
+		0% no-repeat padding-box;
 }

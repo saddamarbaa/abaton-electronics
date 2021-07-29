@@ -1,9 +1,9 @@
 /** @format */
 
-import React from "react";
+import React, { memo } from "react";
 import classes from "./Footer.module.css";
 import { NavLink } from "react-router-dom";
-
+import Fade from "react-reveal/Fade";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
@@ -43,16 +43,13 @@ const Footer = () => {
 
 				<nav className={classes.nav}>
 					<a href='#about'> About us</a>
-
 					<a href='#feature'> Feature</a>
-
 					<a href='#work'>How it works</a>
-
-					<NavLink to='/contact'>Contact</NavLink>
+					<a href='#contact'>Contact</a>
 				</nav>
 
 				<div className={classes.contacts}>
-					<p>
+					<p className={classes["hide-ms"]}>
 						<span>Contact</span>
 					</p>
 					<p>
@@ -80,7 +77,9 @@ const Footer = () => {
 			</div>
 			<div className={classes["footer-bottom"]}>
 				<div></div>
-				<p>&copy; 2011 Abaton Electronics | Power By: PHONEIX</p>
+				<Fade right big>
+					<p>&copy; 2011 Abaton Electronics | Power By: PHONEIX</p>
+				</Fade>
 			</div>
 
 			<div
@@ -92,4 +91,4 @@ const Footer = () => {
 	);
 };
 
-export default Footer;
+export default memo(Footer);
