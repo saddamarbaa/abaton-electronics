@@ -1,18 +1,22 @@
 /** @format */
 
-import React from "react";
-import "./App.css";
+import React, { Suspense } from "react";
 
-import { Route, Switch, Redirect } from "react-router-dom";
-import Layout from "./components/layout/Layout";
-import About from "./components/About";
-
-import Contact from "./components/Contact";
-import Work from "./components/Work";
-import Features from "./components/Features";
-
+import LoadingSpinner from "./components/UI/LoadingSpinner";
+const Layout = React.lazy(() => import("./components/layout/Layout"));
 function App() {
-	return <Layout></Layout>;
+	return (
+		<div>
+			<Suspense
+				fallback={
+					<div className='centered'>
+						<LoadingSpinner />
+					</div>
+				}>
+				<Layout></Layout>
+			</Suspense>
+		</div>
+	);
 }
 
 export default App;

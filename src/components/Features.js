@@ -8,7 +8,7 @@ import "react-lazy-load-image-component/src/effects/blur.css";
 
 const Features = () => {
 	return (
-		<section id='feature' className={classes.feature}>
+		<section  className={classes.feature}>
 			<div className={classes["feature-top-wrap"]}>
 				<Fade bottom>
 					<div className={classes["top-content"]}>
@@ -36,7 +36,17 @@ const Features = () => {
 						</p>
 					</div>
 					<div className={classes["top-img"]}>
-						<img src='/images/restaurant.png' alt='features Image' />
+						<LazyLoadImage
+							effect='blur'
+							placeholderSrc='https://image.tmdb.org/t/p/original/4EYPN5mVIhKLfxGruy7Dy41dTVn.jpg'
+							className='product__image'
+							src='/images/restaurant.png'
+							alt='demo image'
+							// height={190}
+							// weight={190}
+							objectFit='contain'
+						/>
+						{/* <img src='/images/restaurant.png' alt='features Image' /> */}
 					</div>
 				</Fade>
 			</div>

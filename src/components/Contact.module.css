@@ -3,14 +3,20 @@
 .contact {
 	background: #ffffff;
 	min-height: 50.75rem;
-	padding: 5%;
+	padding: 5rem 5%;
 	color: #4b4b4d;
+}
+
+@media (min-width: 768px) {
+	.contact {
+		padding: 8rem 5%;
+	}
 }
 
 .contact .content-wrapper {
 	margin-top: 3rem;
 	max-width: 41.75rem;
-	width: 90%;
+	width: 95%;
 	min-height: 34rem;
 	background: #ffffff 0% 0% no-repeat padding-box;
 	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);

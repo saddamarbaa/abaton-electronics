@@ -2,8 +2,14 @@
 
 .about {
 	background: #e8e8e8;
-	padding-bottom: 2.3rem;
+	padding-bottom: 5rem;
 	position: relative;
+}
+
+@media (min-width: 768px) {
+	.about {
+		padding-bottom: 8rem;
+	}
 }
 
 .about .image {
@@ -18,7 +24,7 @@
 }
 
 .image img {
-	width: 90%;
+	width: 100%;
 	height: 100%;
 	object-fit: cover;
 }
@@ -28,7 +34,7 @@
 	position: absolute;
 	width: 100%;
 	top: 40%;
-	z-index: 3;
+	z-index: 5;
 	left: 0;
 	margin-bottom: 1.2rem;
 }
@@ -86,6 +92,7 @@
 	justify-content: center;
 	flex-direction: column;
 	padding: 2rem 5%;
+	padding-bottom: 0;
 }
 
 .about .trustedBy h1 {
@@ -154,12 +161,23 @@
 }
 
 .drop-back-shadow {
+	/* position: absolute;
+	z-index: 3;
+	top: 0;
+	left: 0;
+	bottom: 0%;
+	width: 40%;
+	background: transparent linear-gradient(91deg, #e8e8e8 0%, #e8e8e800 100%) 0%
+		0%; */
+
+	/* background: transparent linear-gradient(91deg, #a39c9c 0%, #c7252500 100%) 0% */
+
 	position: absolute;
 	z-index: 3;
 	top: 0;
 	left: 0;
 	bottom: 0%;
-	width: 20%;
-	background: transparent linear-gradient(91deg, #e8e8e8 0%, #e8e8e800 100%) 0%
-		0% no-repeat padding-box;
+	width: 40%;
+	background: transparent linear-gradient(91deg, #8a8686 0%, #c7252500 100%) 0%
+		0%;
 }

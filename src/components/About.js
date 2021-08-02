@@ -4,12 +4,14 @@ import React, { memo } from "react";
 import classes from "./About.module.css";
 import ArrowBackIosIcon from "@material-ui/icons/ArrowBackIos";
 import ArrowForwardIosIcon from "@material-ui/icons/ArrowForwardIos";
+import "react-lazy-load-image-component/src/effects/blur.css";
 
 const About = () => {
 	return (
 		<section id='about' className={classes.about}>
 			<div className={classes.image}>
 				<img
+					loading='lazy'
 					src='/images/woman-entering-furniture-store-1600x900.png'
 					alt='image'
 				/>

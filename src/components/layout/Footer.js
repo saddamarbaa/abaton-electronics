@@ -2,12 +2,10 @@
 
 import React, { memo } from "react";
 import classes from "./Footer.module.css";
-import { NavLink } from "react-router-dom";
 import Fade from "react-reveal/Fade";
 import TwitterIcon from "@material-ui/icons/Twitter";
 import FacebookIcon from "@material-ui/icons/Facebook";
 import MailOutlineIcon from "@material-ui/icons/MailOutline";
-import FilterVintageIcon from "@material-ui/icons/FilterVintage";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import ExpandLessIcon from "@material-ui/icons/ExpandLess";
@@ -18,9 +16,9 @@ const Footer = () => {
 
 	const toggleVisible = () => {
 		const scrolled = document.documentElement.scrollTop;
-		if (scrolled > 300) {
+		if (scrolled > 400) {
 			setVisible(true);
-		} else if (scrolled <= 300) {
+		} else if (scrolled <= 400) {
 			setVisible(false);
 		}
 	};
@@ -75,10 +73,11 @@ const Footer = () => {
 					{/* <FilterVintageIcon className={classes.icon} /> */}
 				</div>
 			</div>
+
 			<div className={classes["footer-bottom"]}>
 				<div></div>
 				<Fade right big>
-					<p>&copy; 2011 Abaton Electronics | Power By: PHONEIX</p>
+					<p>&copy; 2011 Abaton Electronics | Power By: PHOENIX</p>
 				</Fade>
 			</div>
 

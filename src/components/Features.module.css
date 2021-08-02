@@ -10,8 +10,14 @@
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-	padding: 2rem 5%;
+	padding: 5rem 5% !important;
 	padding-right: 0;
+}
+
+@media (min-width: 768px) {
+	.feature .feature-top-wrap {
+		padding: 8rem 5% !important;
+	}
 }
 
 .feature .feature-top-wrap .top-content {
@@ -63,7 +69,13 @@
 }
 
 .feature .feature-bottom-wrap {
-	padding: 2rem 5%;
+	padding: 5rem 5%;
+}
+
+@media (min-width: 768px) {
+	.feature .feature-bottom-wrap {
+		padding: 8rem 5%;
+	}
 }
 
 .feature .feature-bottom-wrap h2 {

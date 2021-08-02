@@ -1,29 +1,21 @@
 /** @format */
 
 import { memo, React, useState } from "react";
-import { NavLink } from "react-router-dom";
 import MenuIcon from "@material-ui/icons/Menu";
 import { IconButton } from "@material-ui/core";
 import CloseIcon from "@material-ui/icons/Close";
 import classes from "./MainNavigation.module.css";
-import { useHistory } from "react-router";
 
 const MainNavigation = () => {
-	const history = useHistory();
 	const [burgerMenuStatus, SetBurgerMenuStatus] = useState(false);
 
-	const handlerCloseMenu = () => {};
 	return (
 		<>
 			<header className={classes.header}>
 				<div className={classes.logo}>
-					<img
-						src='/images/mainlogo.png'
-						alt='Logo'
-						onClick={() => {
-							history.push("/");
-						}}
-					/>
+					<a href='/'>
+						<img src='/images/mainlogo.png' alt='Logo' />
+					</a>
 				</div>
 				<nav className={`${classes.nav} ${classes.showNav}`}>
 					<ul>
@@ -34,11 +26,15 @@ const MainNavigation = () => {
 						</li>
 
 						<li>
-							<a href='#feature'>feature</a>
+							<a className={classes.worklink} href='#feature'>
+								AGEO 19
+							</a>
 						</li>
 
 						<li>
-							<a href='#work'>How it works</a>
+							<a className={classes.worklink} href='#work'>
+								Who we are?
+							</a>
 						</li>
 
 						<li>
@@ -97,20 +93,18 @@ const MainNavigation = () => {
 								onClick={() => {
 									SetBurgerMenuStatus(false);
 								}}>
-								feature
+								AGEO 19
 							</a>
 						</li>
-
 						<li>
 							<a
 								href='#work'
 								onClick={() => {
 									SetBurgerMenuStatus(false);
 								}}>
-								How it works
+								Who we are?
 							</a>
 						</li>
-
 						<li>
 							<a
 								href='#contact'
@@ -127,4 +121,4 @@ const MainNavigation = () => {
 	);
 };
 
-export default MainNavigation;
+export default memo(MainNavigation);

@@ -4,6 +4,7 @@
 	font-size: 1.1rem;
 	color: #4b4b4d;
 	line-height: 1.5;
+	margin-bottom: 1rem;
 }
 
 @media (max-width: 568px) {
@@ -15,12 +16,18 @@
 .work .head {
 	background-color: #f8fbfe;
 	box-shadow: 10px #00000029;
-	padding: 2rem 5%;
+	padding: 5rem 5%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	min-height: 42.813rem;
 	flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+	.work .head {
+		padding: 8rem 5%;
+	}
 }
 
 .work .image {
@@ -78,7 +85,7 @@
 }
 
 .work .work-bottom-wrap {
-	padding: 2rem 5%;
+	padding: 5rem 5%;
 	display: flex;
 	min-height: 54.375rem;
 	flex-wrap: wrap;
